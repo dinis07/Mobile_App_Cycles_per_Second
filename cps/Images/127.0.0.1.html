@@ -1,0 +1,198 @@
+
+<!-- saved from url=(0022)http://127.0.0.1:8887/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./127.0.0.1_files/styles.css">
+    <script src="./127.0.0.1_files/jquery.min.js"></script>
+    <script src="./127.0.0.1_files/mcad.library.v1-0.min-d.js"></script>
+    <script src="./127.0.0.1_files/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="panel-inactive" style="width: 651px; height: 359px;">
+
+        <!-- Main Menu  -->
+        <div id="mainMenuWrapper" class="mainMenuWrapper" style="">
+            <div id="mainMenu" class="mainMenu">
+                <div id="logoWrap">
+                    <img id="logoImg" src="./127.0.0.1_files/logo.png">
+                    <p id="logo"> Cycles Per Second </p>
+                </div>
+                <div id="toneWrap">
+                    <button id="tone">Tone </button>
+                </div>
+                <div id="noiseWrap">
+                    <button id="noise">Noise </button>
+                </div>
+
+                <div id="instWrap">
+                    <button id="instruments">Samples</button>
+                </div>
+            </div>
+        </div>
+        <!-- Difficulty Select -->
+        <div id="difficultyWrapper" hidden="" style="display: none;">
+            <div id="difficulty" class="difficulty">
+                <h1 id="diffTitle" style="">Difficulty Select</h1>
+                <div id="easyWrap" class="wrapDiff1">
+                    <button id="dBack"></button>
+                    <button id="easy" class="btnDiff1">Easy</button>
+                </div>
+                <div id="mediumWrap" class="wrapDiff2">
+                    <button id="medium" class="btnDiff2">Medium</button>
+                </div>
+                <div id="hardWrap" class="wrapDiff1">
+                    <button id="hard" class="btnDiff1">Hard</button>
+                </div>
+                <div id="vHardWrap" class="wrapDiff2">
+                    <button id="veryHard" class="btnDiff2">Very Hard</button>
+                </div>
+                <div id="insaneWrap" class="wrapDiff1">
+                    <button id="insane" class="btnDiff1">INSANE</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Sample Select -->
+        <div id="sampleWrapper" class="sampleWrapper" style="display: none;">
+            <div id="sTitleWrap" class="sDiv1">
+                    <button id="sBack"></button>
+                    <h1 id="sampleTitle">Sample Select</h1>
+            </div>
+            <!-- drums  -->
+            <div id="drums" class="sDiv2">
+                <h2>Drums</h2>
+                <button id="kick"> Kick </button>
+                <button id="snare"> Snare </button>
+                <button id="hats"> Hats </button>
+                <button id="rTom"> Rack Tom </button>
+                <button id="fTom"> Floor Tom </button>
+            </div>
+
+            <!-- strings -->
+            <div id="strings" class="sDiv1">
+                <h2> Strings </h2>
+                <button id="bass">Bass</button>
+                <button id="guiAcoustic">Acoustic Guitar</button>
+                <button id="guiRiff">Electric Riff</button>
+                <button id="guiBlues">Blues Guitar</button>
+            </div>
+
+            <!-- Piano & Sax  -->
+            <div id="pianoSax" class="sDiv2">
+                <h2> Piano &amp; Sax </h2>
+                <button id="piano">Piano</button>
+                <button id="saxBreathy">Breathy Sax</button>
+                <button id="saxTwindling">Twindling Sax</button>
+            </div>
+
+            <!-- Vox -->
+            <div id="vox" class="sDiv1">
+                <h2> Vocals </h2>
+                <button id="voxMale">Male Vocals</button>
+                <button id="voxFemale">Female Vocals</button>
+            </div>
+
+        </div>
+
+        <!-- Eq Music -->
+        <div id="panel" hidden="" style="display: none;">
+            <!-- Panel Head -->
+            <div id="panel-header" class="pHeader">
+                <div id="game-title">
+                    <h1 id="title" style="">Cycles Per Second: Tone</h1>
+                </div>
+                <div id="resultTextDiv">
+                    <p id="resultText"></p>
+                </div>
+                <div id="qNumDiv">
+                    <a> / 10 </a>
+                    <a id="qNum">1</a>
+                </div>
+            </div>
+            <!-- Panel Body -->
+            <div id="panel-body">
+                <div id="eq-body">
+                    <div id="binWrapper" class="eqBins">
+                        <div id="bin1" style="width: 4.4%;">
+                            <p style="margin-left: 3%;">40<small>Hz</small></p>
+                        </div>
+                        <div id="bin2" style="width: 8.7%;">
+                            <p style="margin-left: 7%;">80<small>Hz</small></p>
+                        </div>
+                        <div id="bin3" style="width: 10.5%;">
+                            <p style="margin-left: 8%;">160<small>Hz</small></p>
+                        </div>
+                        <div id="bin4" style="width: 10.9%;">
+                            <p style="margin-left: 9%;">320<small>Hz</small></p>
+                        </div>
+                        <div id="bin5" style="width: 10.5%;">
+                            <p style="margin-left: 8.5%;">640<small>Hz</small></p>
+                        </div>
+                        <div id="bin6" style="width: 9.8%;">
+                            <p style="margin-left: 7.5%;">1.2<small>kHz</small></p>
+                        </div>
+                        <div id="bin7" style="width: 11.3%;">
+                            <p style="margin-left: 10%;">2.5kHz</p>
+                        </div>
+                        <div id="bin8" style="width: 10.8%;">
+                            <p style="margin-left: 9%;">5khz</p>
+                        </div>
+                        <div id="bin9" style="width: 11.2%;">
+                            <p style="margin-left: 8%;">10.2kHz</p>
+                        </div>
+                        <div id="bin10" style="width: 8.7%;">
+                            <p style="margin-left: 5%;">18kHz</p>
+                        </div>
+
+
+                    </div>
+                    <div id="eq-range" class="eq-spec" style="width: 2%; left: 303.04px;"></div>
+                    <div id="eq-input" class="eq-spec" style="">
+                        <input id="frequency-select" class="eq-spec" type="range" min="4" max="95.63" step="0.01" style="width: 618.45px;">
+                        <div id="cFreq" style="display: none;"></div>
+                        <p id="cFreqNum" style="display: none;">1754 Hz</p>
+                        <p id="freqNum" style="left: 319.509px;" hidden="">914 Hz</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Panel footer -->
+            <div id="panel-footer" class="controls">
+                <div id="playRepeat">
+                    <button id="repeat"></button>
+                    <input type="checkbox" id="loop" checked="">
+                    <button id="play" style="filter: invert(100%);"></button>
+                    <button id="stop" style="display: none;"></button>
+                </div>
+                <div id="subResults" class="results">
+                    <button id="userAnswer" disabled="" style="color: black; filter: invert(0%);"> Your Answer</button>
+                    <button id="submit" style="display: block;" disabled="">Submit</button>
+                    <button id="cAnswer" disabled="" style="color: black; filter: invert(0%);"> Original Frequency</button>
+                    <button id="next" style="display: none;"></button>
+                    <button id="finish"></button>
+                    <input type="checkbox" id="submitOnOff">
+                </div>
+                <div id="menuFilter">
+                    <button id="filter" style="filter: invert(20%);" disabled=""></button>
+                    <button id="qMenu"></button>
+                </div>
+            </div>
+        </div>
+        <!-- Quiz Menu -->
+        <div id="qMenuWrapper" class="qMenuWrapper" style="display: none;">
+            <div></div>
+            <div id="menuNotice">
+                <p id="score">Menu</p>
+            </div>
+            <div></div>
+            <div id="qmenuControls" class="qmenuControls">
+                <button id="exitMenu"> Back </button>
+                <button id="tryAgain" hidden="" style="display: none;">Try <br> Again</button>
+                <button id="toMainMenu"> Main <br> Menu </button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>

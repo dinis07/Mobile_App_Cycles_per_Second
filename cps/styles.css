@@ -1,0 +1,517 @@
+/*----------------------------------------------------- */
+/*-----------------| Main Wrapper |-------------------- */
+/*----------------------------------------------------- */
+
+#panel-inactive {
+    width: 100%;
+    background-color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel-inactive button {
+    outline: none;
+}
+
+/*------------------------------------------------------- */
+/*-------------------| MAIN MENU |----------------------- */
+/*------------------------------------------------------- */
+
+#mainMenuWrapper {
+    width: 95%;
+    height: 95%;
+    margin: 1%;
+    display: inline-block;
+}
+
+.mainMenu div {
+    height: 35%;
+    width: 33.33%;
+    float: left;
+}
+
+.mainMenu button {
+    background: url("Images/hole.png")no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    height: 100%;
+    width: 62%;
+    color: white;
+    display: inline-block;
+    filter: invert(100%);
+    margin: 0;
+    font-size: 100%;
+}
+
+#logoWrap {
+    height: 65%;
+    width: 100%;
+}
+
+#logoImg {
+    height: 69%;
+    width: 50%;
+    margin: 4% 6% 0% 6%;
+    filter: invert(100%);
+}
+
+#logo {
+    color: white;
+    font-weight: bold;
+    margin: 1%;
+    font-size: 150%;
+}
+
+/*-------------------------------------------------------- */
+/*-------------------| DIFFICULTY |----------------------- */
+/*-------------------------------------------------------- */
+
+#difficultyWrapper {
+    width: 95%;
+    height: 95%;
+    margin: 1%;
+    display: none;
+}
+
+#difficulty {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#diffTitle {
+    color: white;
+    position: absolute;
+    background: black;
+    height: 17%;
+    width: 64%;
+    margin: 3% 0% 0% 14%;
+    font-size: 290%;
+    border: solid white;
+}
+
+.difficulty div {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.difficulty button {
+    color: white;
+    font-size: 100%;
+}
+
+.wrapDiff2 {
+    background-color: white;
+}
+
+.btnDiff1 {
+    background: url(Images/hole.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    height: 34%;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    filter: invert(100%);
+}
+.btnDiff2 {
+    background: url(Images/hole.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    height: 34%;
+    width: 100%;
+    position: relative;
+    top: 60%;
+}
+
+#easy {
+    top: 14%;
+}
+
+#dBack {
+    background: url(Images/back.png) no-repeat;
+    background-size: contain;
+    height: 9%;
+    width: 27%;
+    border: none;
+    float: left;
+    margin: 23% 0% 0% 23%;
+    filter: invert(100%);
+}
+/*------------------------------------------------------ */
+/*-------------------| SAMPLE SELECT |------------------ */
+/*------------------------------------------------------ */
+
+#sampleWrapper {
+    background-color: black;
+    width: 95%;
+    height: 95%;
+    margin: 1.3%;
+    display: none;
+}
+
+.sampleWrapper h2 {
+    font-size: 20;
+    margin: 0;
+}
+
+.sampleWrapper div {
+    height: 20%;
+    width: 100%;
+}
+
+.sampleWrapper button {
+    background: url(Images/longSplash.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 54%;
+    width: 19%;
+    border: none
+}
+
+.sDiv1 {
+    filter: invert(100%);
+    color: black;
+}
+
+.sDiv1 button {
+    color: white;
+}
+
+.sDiv2 {
+    background-color: white;
+    color: black;
+}
+
+.sDiv2 button{
+    color: white;
+}
+
+#sBack {
+    background: url(Images/back.png) no-repeat;
+    background-size: contain;
+    height: 55%;
+    width: 5%;
+    border: none;
+    float: left;
+    margin: 2% 0% 0% 2%;
+}
+
+#sampleTitle {
+    color: black;
+    width: 50%;
+    height: 63%;
+    margin: 0% 0% 0% 26%;
+    border: solid;
+}
+
+/*----------------------------------------------------- */
+/*----------------|  FREQUENCY INPUT |----------------- */
+/*----------------------------------------------------- */
+
+#panel { 
+    margin-top: 9px;
+    display: inline-block;
+    height: 95%; /* 342px*/
+    width: 95%; /* 618px*/
+    background-color: white;
+    display: none;
+
+}
+
+/*-------------------| Panel Header |-------------------*/
+#panel-header {
+    background-color: black;
+    margin-bottom: 1.6%;
+    height: 10%; 
+    width: 100%;
+}
+
+.pHeader div {
+    height: 100%;
+    width: 33.3%;
+    float: left;
+
+}
+.pHeader a {
+    color: white;
+    text-align: right;
+    float: right;
+    margin: 4% 0% 0% 1%;
+}
+
+#resultText {
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+    margin: 0;
+}
+
+#game-title {
+    margin: 0;
+    text-align: center;
+}
+
+#title {
+    position: fixed;
+    color: white;
+    font-size: 12pt;
+}
+
+
+/*-------------------| Panel Body |-------------------*/
+
+#panel-body {
+    height: 62%;
+    width: 100%;
+
+}
+
+#eq-body {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#binWrapper {
+    background-color: grey;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.eqBins div {
+    border-right: 1px solid  rgba(60,60,60,0.5);
+    display: inline;
+    height: 83%;
+    margin-top: 1.5%;
+    float: left;
+}
+
+.eqBins p {
+    color: rgba(255,255,255, .5);
+    font-size: 12;
+    position: relative;
+    top: 95%;
+    margin-right: -38%;
+    float: right;
+}
+
+.eq-spec {
+    float: left;
+    height: 100%;
+}
+
+#eq-range {
+    background-color: rgba(0,0,0,.2);
+    position: relative;
+}
+
+#eq-input {
+    position: absolute;
+    width: 100%;
+}
+
+#frequency-select {
+    -webkit-appearance: none;
+    background:rgba(0, 0, 0, 0);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#frequency-select::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 100%;
+    width: 2px; 
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+}
+
+#cFreq {
+    position: inherit;
+    height: 100%;
+    width: .3%;
+    display: none;
+}
+
+#cFreqNum {
+    position: fixed;
+    bottom: 60%;
+    display: none; 
+}
+
+#freqNum {
+    color: white;
+    position: fixed;
+    bottom: 50%;
+    
+}
+
+/*-------------------| Panel Footer |-------------------*/
+#panel-footer {
+    background-color: black;
+    margin-top: 1.6%;
+    height: 22.2%;
+    width: 100%;
+} 
+
+.controls div{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+/* Repeat and Play Buttons */
+
+.controls button {
+    filter: invert(100%); 
+    border: none;
+    position: relative;
+    height: 60%;
+    width: 30%;
+    float: left;
+    margin: 10%;
+    font-size: 10;
+}
+
+#repeat {
+    background: url('Images/repeat.png') no-repeat;
+    background-size: contain;
+}
+
+#loop {
+    position: absolute;
+    display: none;
+}
+
+#play {
+    background: url('Images/play.png') no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+}
+
+#stop {
+    background: url('Images/stop.png') no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    display: none;
+
+}
+
+/* submit and result buttons */
+#subResults {
+    width: 50%;
+}
+
+.results button { 
+    background: url('Images/button.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(0%);
+    height: 80%;
+    width: 20%;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin: 3% 6.6%;
+}
+
+#submit {
+    filter: invert(20%);
+    color: white;
+    display: unset;
+}
+
+#submitOnOff {
+    display: none;
+}
+
+#next {
+    background: url('Images/next.png') no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    height: 70%;
+    width: 20%;
+    margin: 4.5%;
+    display: none;
+
+}
+#finish {
+    background: url('Images/finish.png') no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+    display: none;
+}
+
+/* menu/Filter buttons */
+
+#filter {
+    background: url('Images/filter.png') no-repeat;
+    background-size: contain;
+}
+#qMenu {
+    background: url('Images/menu.png') no-repeat;
+    background-size: contain;
+}
+
+/*-------------------| Quiz Menu |-------------------*/
+
+#qMenuWrapper {
+    background-color: rgba(0, 0, 0, 0.7); 
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.qMenuWrapper div {
+    height: 60%;
+    width: 33%;
+    float: left;
+    background-color: black;
+
+}
+
+
+#menuNotice {
+    background: url(Images/Headphones.png) no-repeat;
+    background-size: contain;
+    width: 34%;
+    filter: invert(100%);
+}
+
+
+#score {
+    position: relative;
+    margin: 27% 22%;
+    font-size: 22px;
+    width: 55%;
+}
+
+#qmenuControls {
+    background: url(Images/wave.png);
+    background-size: contain;
+    width: 100%;
+    height: 40%;
+    filter: invert(100%);
+}
+
+
+.qmenuControls button {
+    background: url("Images/hole.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 83%;
+    width: 20%;
+    margin: 1%;
+    filter: invert(100%);
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 95%;
+}
